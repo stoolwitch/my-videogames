@@ -1,3 +1,17 @@
+window.onload = function() {init()};
+document.getElementById("navbar").onclick = function() {updateCheckbox()};
+
+function init() {
+  sort();
+  updateCheckbox();
+}
+
+function updateCheckbox() {
+  checkboxSort();
+  checkPS1();
+  checkPS2();
+}
+
 function sort() {
     var list, i, switching, b, shouldSwitch;
     list = document.getElementById("games");
@@ -19,4 +33,45 @@ function sort() {
     }
   }
 
+function checkboxSort() {
+    allPS = document.getElementById('checkPS');
+    if (allPS.checked == true) {
+      console.log("slaaayy");
+      document.getElementById('checkPS1').checked = true;
+      document.getElementById('checkPS2').checked = true;
+      document.getElementById('checkPS3').checked = true;
+      document.getElementById('checkPS4').checked = true;
+      document.getElementById('checkPS5').checked = true;
+      document.getElementById('checkPSV').checked = true;
+    }
+}
+
+function checkPS1() {
+  gamesCheck = document.getElementById('checkPS1');
+  games = document.querySelectorAll(".ps1");
   
+  if (gamesCheck.checked == false) {
+    games.forEach((element) => {
+      element.classList.add("hidegame");
+    });
+  } else {
+    games.forEach((element) => {
+      element.classList.remove("hidegame");
+    });
+  }
+}
+
+function checkPS2() {
+  gamesCheck = document.getElementById('checkPS2');
+  games = document.querySelectorAll(".ps2");
+  
+  if (gamesCheck.checked == false) {
+    games.forEach((element) => {
+      element.classList.add("hidegame");
+    });
+  } else {
+    games.forEach((element) => {
+      element.classList.remove("hidegame");
+    });
+  }
+}

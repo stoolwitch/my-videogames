@@ -1,16 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 nav {
     background-color: aliceblue;
 }
 
-.game {
-    img{
-        width: 200px;
-    height: auto;
+
+#games {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .game {
+        img{
+            width: 200px;
+            height: auto;
+        }
+        
     }
-    
 }
 
 .gamenamehide {
+    display: none;
+}
+
+.hidegame {
     display: none;
 }
 

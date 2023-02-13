@@ -1,1 +1,1 @@
-nav{background-color:#f0f8ff}.game img{width:200px;height:auto}.gamenamehide{display:none}
+*{margin:0;padding:0}nav{background-color:#f0f8ff}#games{display:flex;flex-direction:row;flex-wrap:wrap}#games .game img{width:200px;height:auto}.gamenamehide{display:none}.hidegame{display:none}
