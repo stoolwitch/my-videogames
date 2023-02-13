@@ -35,15 +35,12 @@ function sort() {
   }
 
 function checkboxSort() {
-    allPS = document.getElementById('checkPS');
-    if (allPS.checked == true) {
-      console.log("slaaayy");
-      document.getElementById('checkPS1').checked = true;
-      document.getElementById('checkPS2').checked = true;
-      document.getElementById('checkPS3').checked = true;
-      document.getElementById('checkPS4').checked = true;
-      document.getElementById('checkPS5').checked = true;
-      document.getElementById('checkPSV').checked = true;
+    allBRAND = document.getElementById('checkPS');
+    consoles = document.querySelectorAll(".ps");
+    if (allBRAND.checked == true) {
+      consoles.forEach((element) => {
+        element.checked = true;
+      });
     }
 }
 
