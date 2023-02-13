@@ -12,7 +12,7 @@ function updateCheckbox() {
   checkPS2();
   checkPS3();
 }
-
+// sorts the games by alphabetical order by the text in the <p> that is hidden
 function sort() {
     var list, i, switching, b, shouldSwitch;
     list = document.getElementById("games");
@@ -33,7 +33,7 @@ function sort() {
       }
     }
   }
-
+// checks all playstation consoles if all playstation is checked
 function checkboxSort() {
     allBRAND = document.getElementById('checkPS');
     consoles = document.querySelectorAll(".ps");
@@ -43,6 +43,8 @@ function checkboxSort() {
       });
     }
 }
+
+// shows/hides games per console
 
 function checkPS1() {
   gamesCheck = document.getElementById('checkPS1');
