@@ -10,6 +10,7 @@ function updateCheckbox() {
   checkboxSort();
   checkPS1();
   checkPS2();
+  checkPS3();
 }
 
 function sort() {
@@ -64,6 +65,21 @@ function checkPS1() {
 function checkPS2() {
   gamesCheck = document.getElementById('checkPS2');
   games = document.querySelectorAll(".ps2");
+  
+  if (gamesCheck.checked == false) {
+    games.forEach((element) => {
+      element.classList.add("hidegame");
+    });
+  } else {
+    games.forEach((element) => {
+      element.classList.remove("hidegame");
+    });
+  }
+}
+
+function checkPS3() {
+  gamesCheck = document.getElementById('checkPS3');
+  games = document.querySelectorAll(".ps3");
   
   if (gamesCheck.checked == false) {
     games.forEach((element) => {
