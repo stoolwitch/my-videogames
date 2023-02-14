@@ -13,6 +13,7 @@ Trying to have a website where i list all the physical games i own and be able t
 ### CSS
 
 - make everything pretty
+- mobile friendly
 
 ### Content
 
