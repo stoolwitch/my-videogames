@@ -11,7 +11,11 @@ function updateCheckbox() {
   checkPS1();
   checkPS2();
   checkPS3();
+  checkPS4();
+  checkPS5();
+  checkPSV();
 }
+
 // sorts the games by alphabetical order by the text in the <p> that is hidden
 function sort() {
     var list, i, switching, b, shouldSwitch;
@@ -42,6 +46,10 @@ function checkboxSort() {
         element.checked = true;
       });
     }
+    // uncheck allplaystation if any ps is unchecked --- but it's not working
+    // if (consoles.some(element.checked === false)){
+    //   allBRAND.checked = false;
+    // }
 }
 
 // shows/hides games per console
@@ -79,6 +87,51 @@ function checkPS2() {
 function checkPS3() {
   gamesCheck = document.getElementById('checkPS3');
   games = document.querySelectorAll(".ps3");
+  
+  if (gamesCheck.checked == false) {
+    games.forEach((element) => {
+      element.classList.add("hidegame");
+    });
+  } else {
+    games.forEach((element) => {
+      element.classList.remove("hidegame");
+    });
+  }
+}
+
+function checkPS4() {
+  gamesCheck = document.getElementById('checkPS4');
+  games = document.querySelectorAll(".ps4");
+  
+  if (gamesCheck.checked == false) {
+    games.forEach((element) => {
+      element.classList.add("hidegame");
+    });
+  } else {
+    games.forEach((element) => {
+      element.classList.remove("hidegame");
+    });
+  }
+}
+
+function checkPS5() {
+  gamesCheck = document.getElementById('checkPS5');
+  games = document.querySelectorAll(".ps5");
+  console.log("ps5?");
+  if (gamesCheck.checked == false) {
+    games.forEach((element) => {
+      element.classList.add("hidegame");
+    });
+  } else {
+    games.forEach((element) => {
+      element.classList.remove("hidegame");
+    });
+  }
+}
+
+function checkPSV() {
+  gamesCheck = document.getElementById('checkPSV');
+  games = document.querySelectorAll(".psv");
   
   if (gamesCheck.checked == false) {
     games.forEach((element) => {
