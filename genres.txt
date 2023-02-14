@@ -1,0 +1,53 @@
+PS Store genres
+
+Action
+Aventure
+Occasionnel
+Jeux de réflexion
+Arcade
+RPG
+Stratégie
+Jeu de tir
+Simulation
+Pilotage/courses
+Spécifiques
+Familial
+Fête
+Simulateur
+Sport
+Horreur
+Musique/Rythme
+Entraînement Cerebral
+Educatif
+Baston
+Quiz
+
+xbox store genres
+
+Action & Aventure
+Card & Board
+Classics
+Educational
+Family & Kids
+Fighting
+MOBA
+Music
+Platformer
+Puzzle & Trivia
+Racing & Flying
+Role Playing
+Shooter
+Simulation
+Sports
+Strategy
+
+steam genres
+
+Action
+Adventure
+Role-Playing
+Simulation
+Strategy
+Casual
+Sports & Racing
+Co-op
