@@ -38,7 +38,8 @@ nav {
 }
 
 .gamenamehide {
-    display: none;
+    //display: none;
+    z-index: 20;
 }
 
 .hidegame {

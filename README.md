@@ -9,6 +9,7 @@ Trying to have a website where i list all the physical games i own and be able t
 - when unchecking a specific console, uncheck the console group
     - optimize that so the same code applies to all checkbox groups
 - every checkbox checked goes into an array in two categories (consoles and genres) and with a button validate and show only checked
+- fix the fact that the alphabetical listing taked the name of the image and not the text inside the div
 
 ### CSS
 
