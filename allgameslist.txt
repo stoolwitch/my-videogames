@@ -1,8 +1,67 @@
 PS1
 
+Crash Bandicoot 2: Cortex Strikes Back
+CTR: Crash Team Racing
+Gran Turismo 2
+Metal Gear Solid
+MTV Sports: Snowboarding
+Rayman
+Resident Evil 2
+Spider-Man
+Spyro The Dragon
+Tomb Raider
+Tomb Raider II
+Tomb Raider: La Révélation Finale
+
 PS2
 
+L'Âge de Glace 2
+Beyond Good & Evil
+Crash Nitro Kart
+Disney's Kim Possible: What's the Switch?
+Eragon
+Final Fantasy X
+God of War
+God of War II
+Jak and Daxter: The Precursor Legacy
+Jak 3
+Metal Gear Solid 2: Sons of Liberty
+Metal Gear Solid 3: Snake Eater
+Need for Speed: Most Wanted
+Ratchet & Clank
+Rayman Raving Rabbids
+Rayman 3 Hoodlum Havoc
+Le Seigneur des Anneaux: Les Deux Tours
+Le Seigneur des Anneaux: Le Retour du Roi
+Shadow of the Colossus
+Star Wars; Episode III, The Revenge of the Sith
+Star Wars: Battlefront II
+
 PS3
+
+Aragorn's Quest, The Lord of the Rings
+Batman Arkham Origins
+Battlefield 3
+Beyond: Two Souls
+Borderlands
+Borderlands: The Pre-Sequel
+Borderlands 2
+Call of Duty: Modern Warfare 3
+Darksiders
+Dead Space 3
+Deus Ex: Human Revolution
+Dragon Age: Origins
+The Elder Scrolls IV: Oblivion
+Fallout 3
+Heavenly Sword
+inFamous
+Lego Star Wars: The Force Awakens
+Metal Gear Solid 4: Guns of the Patriots
+Mirror's Edge
+Ni No Kuni: Wrath of the White Witch
+The Orange Box
+Playstation All-Stars Battle Royale
+Singstar: Die Eiskönigin - Völlig unverfroren
 
 PS4
 
@@ -67,24 +126,129 @@ Lego Star Wars: The Skywalker Saga
 
 PS Vita
 
+Need for Speed: Most Wanted
+Persona 4: Golden
+Silent Hill: Book of Memories
+Uncharted: Golden Abyss
+
 NES
+
+Knight Rider
+R.C. Pro-Am
+Super Mario Bros. / Duck Hunt
 
 GameCube
 
+Animal Crossing
+Cars
+The Legend of Zelda, The Wind Waker + Ocarina of Time Master Quest
+The Legend of Zelda, The Wind Waker
+Luigi's Mansion
+Mario Kart: Double Dash!!!
+Metal Gear Solid: The Twin Snakes
+Metroid Prime (US)
+Resident Evil 4
+Soulcalibur II
+Star Wars: Rogue Leader
+Super Mario Sunshine
+
 Wii
+
+Animal Crossing City Folk
+The Legend of Zelda: Twilight Princess
+The Legend of Zelda: Skyward Sword
+Link's Crossbow Training
+Mario Kart Wii
+Mario & Sonic aux Jeux Olympiques
+Super Mario Galaxy
+Super Mario Galaxy 2
+Super Smash Bros Brawl
+Wii Party
+Wii Play
+Wii Sports
 
 Wii U
 
+Animal Crossing: amiibo Festival
+Hyrule Warriors
+The Legend of Zelda: The Wind Waker HD
+The Legend of Zelda: Twilight Princess HD
+Mario Kart 8
+Super Smash Bros for Wii U
+
 Switch
+
+Just Dance 2018
+The Legend of Zelda: Breath of the Wild
+Mario Kart 8 Deluxe
+Monster Hunter XX
+Moonlighter
+Pokemon Let's Go Evoli
+Super Smash Bros Ultimate
 
 GameBoy
 
+Alleyway
+Donkey Kong Land 2
+The Legend of Zelda: Link's Awakening
+Tetris
+Radar Mission
+Warioland
+Yoshi's Cookie
+
 GameBoy Color
+
+Astérix sur la Trace d'Idéfix
+Rayman
 
 GameBoy Advance
 
+Castlevania
+Castelvania: Harmony of Dissonance
+Donkey Kong ???
+Golden Sun
+King Kong
+The Legend of Zelda: A Link to the Past
+The Legend of Zelda: The Minish Cap
+Mario Kart Super Circuit
+Metroid: Fusion
+Star Wars: Episode 3, The Revenge of the Sith
+Super Mario Bros 3
+Sword of Mana
+Terminator 3
+
 DS
+
+Animal Crossing: Wild World
+Castlevania: Portrait of Ruin
+The Legend of Zelda: Phantom Hourglass
+Mario Kart DS
+Pokemon: Version Platine
 
 3DS
 
+Animal Crossing: New Leaf
+Donkey Kong: Country Returns
+Fantasy Life
+The Legend of Zelda: Ocarina of Time 3D ???
+The Legend of Zelda: Majora's Mask 3D
+The Legend of Zelda: A Link Between Worlds
+The Legend of Zelda: TriForce Heroes
+Mario Kart 7
+Mario & Luigi: Dream Team Bros.
+Persona Q2: New Cinema Labyrinth
+Pokemon: Alpha Sapphire
+Pokemon: Rubis Omega
+Pokemon: Lune
+Pokemon: Ultra-Soleil
+Pokemon Mega Donjon Mystère
+RPG Maker FES
+Story of Seasons
+Super Mario 3D Land
+
 Megadrive
+
+Ecco; The Tides of Time
+Flashback
+Sonic The Hedgehog 2
+Sonic 3
