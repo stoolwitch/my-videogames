@@ -17,7 +17,8 @@ Trying to have a website where i list all the physical games i own and be able t
 ### Content
 
 - square image for every game
-- info over image
+- minimal info hover image
+    - more info opens on click
 - define games genres
 - find a name for the service
 
