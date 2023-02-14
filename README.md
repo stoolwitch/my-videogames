@@ -23,4 +23,11 @@ Trying to have a website where i list all the physical games i own and be able t
 
 ## Todo List v2.0
 
-- make backend
+### Client-side
+
+- login and accounts
+    - borrowing system
+- admin login
+    - interface to add games easier
+        - integrate some games database
+    - interface to manage borrowed games
