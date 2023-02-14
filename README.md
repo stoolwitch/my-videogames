@@ -19,6 +19,7 @@ Trying to have a website where i list all the physical games i own and be able t
 - square image for every game
 - info over image
 - define games genres
+- find a name for the service
 
 ## Todo List v2.0
 
