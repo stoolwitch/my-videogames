@@ -24,9 +24,13 @@
     src: url(media/fonts/noncommercial/Impact.ttf);
 }
 
-nav {
+nav#navbar {
     background-color: aliceblue;
     padding: 1em;
+    input {
+        transform: scale(2);
+        margin: 1em;
+    }
 }
 
 .modal {
