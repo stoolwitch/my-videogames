@@ -1,0 +1,6 @@
+https://codepen.io/AdamGiese/pen/xJPMrJ
+
+https://www.w3schools.com/howto/howto_js_filter_elements.asp
+
+https://stackoverflow.com/questions/54695113/multi-condition-filtering-with-checkboxes-javascript
+
