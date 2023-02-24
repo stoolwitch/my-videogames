@@ -1,6 +1,6 @@
 function filterCondtn1(event) {
-  var element = event.target
-  var condt1 = document.getElementsByClassName("categoriesConsole")
+  var element = event.target;
+  var condt1 = document.getElementsByClassName("categoriesConsole");
   for (var i = 0; i < condt1.length; i++) {
     if (condt1[i].innerHTML.toLowerCase() == element.value.toLowerCase()) {
       if (element.checked == true) {

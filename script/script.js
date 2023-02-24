@@ -8,12 +8,6 @@ function init() {
 
 function updateCheckbox() {
   checkboxSort();
-  checkPS1();
-  checkPS2();
-  checkPS3();
-  checkPS4();
-  checkPS5();
-  checkPSV();
 }
 
 // box to add games??
