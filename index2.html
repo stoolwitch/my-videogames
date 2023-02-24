@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style2.css">
+    <title>Nyx's Games v2</title>
+</head>
+
+<body>
+    <header>
+        <h1>Nyx's Games</h1>
+    </header>
+    <section id="currentFilters">
+        <div id="activeFilters">
+            <button class="activefilter">oui x</button>
+        </div>
+        <button id="filterMenu" onclick="toggleFilterBar()">Filters</button>
+    </section>
+   
+    <section id="games">
+        <article class="game">
+            game
+        </article>
+        <article class="game">
+            game
+        </article>
+        <article class="game">
+            game
+        </article>
+        <article class="game">
+            game
+        </article>
+        <article class="game">
+            game
+        </article>
+    </section>
+    <nav id="filters">
+        <button id="filterGenderButton" class="filterButton" onclick="expandCategory(event)"><p>Genders</p> <img src="media/svg/icons/expand_more.svg" alt=""></button>
+        <div id="Genders" class="filtertypelist">
+            <div class="filtercheckbox"><label for="gender1">gender1</label><input type="checkbox" name="gender1" id="gender1"></div>
+            <div class="filtercheckbox"><label for="gender2">gender2</label><input type="checkbox" name="gender2" id="gender2"></div>
+            <div class="filtercheckbox"><label for="gender2">gender2</label><input type="checkbox" name="gender2" id="gender2"></div>
+        </div>
+        <button id="filterConsoleButton" class="filterButton" onclick="expandCategory(event)"><p>Consoles</p> <img src="media/svg/icons/expand_more.svg" alt=""></button>
+        <div id="Consoles" class="filtertypelist">
+            <div class="filtercheckbox"><label for="console1">console1</label><input type="checkbox" name="console1" id="console1"></div>
+            <div class="filtercheckbox"><label for="console2">console2</label><input type="checkbox" name="console2" id="console2"></div>
+            <div class="filtercheckbox"><label for="console2">console2</label><input type="checkbox" name="console2" id=consoler2"></div>
+        </div>
+    </nav>
+    
+    <script src="script/v2-navbar-display.js"></script>
+</body>
+
+</html>

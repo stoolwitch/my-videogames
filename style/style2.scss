@@ -1,0 +1,98 @@
+:root {
+    --passivebuttonbgcolor: white;
+    --passivebuttonbgcolorhover: rgb(231, 231, 231);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: aliceblue;
+    padding: 1rem 2rem;
+}
+
+#currentFilters {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(252, 240, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    #filterMenu {
+        all: unset;
+        cursor: pointer;
+        text-align: center;
+        padding: 0.5rem 1.5rem;
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 3000px;
+    }
+    #filterMenu:hover {
+        background-color: var(--passivebuttonbgcolorhover);
+    }
+    .filterMenuActive {
+        background-color: black !important;
+        color: white !important;
+    }
+    .filterMenuActive:hover {
+        background-color: rgb(40, 40, 40);
+    }
+    #activeFilters {
+        .activefilter {
+            all: unset;
+            cursor: pointer;
+            text-align: center;
+            padding: 0.5rem 1.5rem;
+            background-color: rgb(194, 194, 194);
+            color: black;
+            border-radius: 3000px;
+        }
+        .activefilter:hover {
+            background-color: rgb(135, 135, 135);
+        }
+    }
+}
+
+#games {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: aliceblue;
+}
+
+#filters {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: rgb(240, 255, 244);
+    display: none;
+    padding: 2rem;
+    .filterButton {
+        all: unset;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0.2rem 0 0.2rem 0.7rem;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+    .filterButton:hover {
+        background-color: var(--passivebuttonbgcolorhover);
+    }
+    .filtertypelist {
+        margin-bottom: 1rem;
+        display: none;
+    }
+}
