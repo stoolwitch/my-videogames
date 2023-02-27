@@ -32,11 +32,18 @@ header {
         all: unset;
         cursor: pointer;
         text-align: center;
-        padding: 0.5rem 1.5rem;
+        padding: 0.5rem 1.3rem 0.5rem 0.5rem;
         color: black;
         background-color: white;
         border: 1px solid black;
         border-radius: 3000px;
+        display: flex;
+        align-items: center;
+        svg {
+            height: 2rem;
+            margin-right: 0.2rem;
+            fill: black;
+        }
     }
     #filterMenu:hover {
         background-color: var(--passivebuttonbgcolorhover);
@@ -44,6 +51,9 @@ header {
     .filterMenuActive {
         background-color: black !important;
         color: white !important;
+        svg {
+            fill: white !important;
+        }
     }
     .filterMenuActive:hover {
         background-color: rgb(40, 40, 40);
@@ -84,9 +94,13 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        padding: 0.2rem 0 0.2rem 0.7rem;
+        padding: 0.3rem 0.7rem;
         border-radius: 5px;
         margin-bottom: 1rem;
+        img {
+            width: 48px;
+            height: 48px;
+        }
     }
     .filterButton:hover {
         background-color: var(--passivebuttonbgcolorhover);
@@ -94,5 +108,54 @@ header {
     .filtertypelist {
         margin-bottom: 1rem;
         display: none;
+        .filtercheckbox {
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0.7rem;
+            border-radius: 5px;
+            margin-bottom: 0.5rem;
+            input[type="checkbox"] {
+                /* Add if not using autoprefixer */
+                -webkit-appearance: none;
+                /* Remove most all native input styles */
+                appearance: none;
+                /* For iOS < 15 */
+                background-color: none;
+                /* Not removed via appearance */
+                margin: 0;
+              
+                font: inherit;
+                color: black;
+                width: 24px;
+                height: 24px;
+                border: 2px solid black;
+                border-radius: 50%;
+                transform: translateY(-0.075em);
+                display: grid;
+                place-content: center;
+              }
+              input[type="checkbox"]::before {
+                content: "";
+                width: 16px;
+                height: 16px;
+                clip-path: circle();
+                transform: scale(0);
+                transition: 120ms transform ease-in-out;
+                box-shadow: inset 1em 1em var(--form-control-color);
+                /* Windows High Contrast Mode */
+                background-color: CanvasText;
+              }
+            
+              input[type="checkbox"]:checked::before {
+                transform: scale(1);
+              }
+        }
+        .filtercheckbox:hover {
+            background-color: var(--passivebuttonbgcolorhover);
+        }
     }
 }

@@ -1,6 +1,7 @@
 var isfilterbaractive = false;
 var isgenderactive = false;
 var isconsoleactive = false;
+var iscategoryactive = false;
 
 function toggleFilterBar() {
     var filterbar = document.getElementById("filters");
@@ -24,6 +25,14 @@ function expandCategory(event) {
     var thiscategory = event.target;
     var whichcategory = thiscategory.firstChild.innerHTML;
     var filterlist = document.getElementById(whichcategory);
-    thiscategory.innerHTML = "<p>"+ whichcategory +"</p> <img src='media/svg/icons/expand_less.svg' alt=''>";
-    filterlist.style.display = "block";
+    if (this.iscategoryactive == false){
+        thiscategory.innerHTML = "<p>"+ whichcategory +"</p> <img src='media/svg/icons/expand_less.svg' alt=''>";
+        filterlist.style.display = "block";
+        this.iscategoryactive = true;
+    } else {
+        thiscategory.innerHTML = "<p>"+ whichcategory +"</p> <img src='media/svg/icons/expand_more.svg' alt=''>";
+        filterlist.style.display = "none";
+        this.iscategoryactive = false;
+    }
+    
 }
