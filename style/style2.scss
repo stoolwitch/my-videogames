@@ -32,7 +32,7 @@ header {
         all: unset;
         cursor: pointer;
         text-align: center;
-        padding: 0.5rem 1.3rem 0.5rem 0.5rem;
+        padding: 0.7rem 1rem;
         color: black;
         background-color: white;
         border: 1px solid black;
@@ -40,8 +40,8 @@ header {
         display: flex;
         align-items: center;
         svg {
-            height: 2rem;
-            margin-right: 0.2rem;
+            height: 1rem;
+            margin-right: 0.7rem;
             fill: black;
         }
     }
@@ -94,12 +94,12 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        padding: 0.3rem 0.7rem;
+        padding: 0.7rem;
         border-radius: 5px;
         margin-bottom: 1rem;
         img {
-            width: 48px;
-            height: 48px;
+            width: 24px;
+            height: 24px;
         }
     }
     .filterButton:hover {
