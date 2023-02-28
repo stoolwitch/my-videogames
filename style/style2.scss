@@ -12,6 +12,7 @@
 body {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    width: 100vw;
 }
 
 header {
@@ -78,6 +79,16 @@ header {
     grid-column-start: 1;
     grid-column-end: 3;
     background-color: aliceblue;
+    height: auto;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
+    justify-content: center;
+    .game {
+        width: 250px;
+        height: 250px;
+        background-image: linear-gradient(45deg, rgb(255, 193, 134), rgb(255, 174, 211));
+    }
 }
 
 #filters {
@@ -86,6 +97,7 @@ header {
     background-color: rgb(240, 255, 244);
     display: none;
     padding: 2rem;
+    height: auto;
     .filterButton {
         all: unset;
         cursor: pointer;
