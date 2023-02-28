@@ -5,96 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <title>Nyx's Games</title>
+    <link rel="stylesheet" href="style/generalstyle.css">
+    <link rel="stylesheet" href="style/gameboxstyle.css">
+    <title>Nyx's Games v2</title>
 </head>
 
-<body>
-    <nav id="navbar">
-        
-        <div class="InputOpts">
-            <p>Playstation</p>
-            <input class="ps" type="checkbox" value="PS1" oninput="filterCondtn1(event);"><label for="PS1">PS1</label>
-            <input class="ps" type="checkbox" value="PS2" oninput="filterCondtn1(event);"><label for="PS2">PS2</label>
-            <input class="ps" type="checkbox" value="PS3" oninput="filterCondtn1(event);"><label for="PS3">PS3</label>
-            <input class="ps" type="checkbox" value="PS4" oninput="filterCondtn1(event);"><label for="PS4">PS4</label>
-            <input class="ps" type="checkbox" value="PS5" oninput="filterCondtn1(event);"><label for="PS5">PS5</label>
-            <input class="ps" type="checkbox" value="PS Vita" oninput="filterCondtn1(event);"><label for="PS Vita">PS Vita</label>
-          </div>
-          <div class="InputOpts">
-            <p>Nintendo</p>
-            <input class="ps" type="checkbox" value="NES" oninput="filterCondtn1(event);">NES
-            <input class="ps" type="checkbox" value="GameCube" oninput="filterCondtn1(event);">GameCube
-            <input class="ps" type="checkbox" value="Wii" oninput="filterCondtn1(event);">Wii
-            <input class="ps" type="checkbox" value="Wii U" oninput="filterCondtn1(event);">Wii U
-            <input class="ps" type="checkbox" value="Switch" oninput="filterCondtn1(event);">Switch
-            <input class="ps" type="checkbox" value="GameBoy" oninput="filterCondtn1(event);">GameBoy
-            <input class="ps" type="checkbox" value="GameBoy Color" oninput="filterCondtn1(event);">GameBoy Color
-            <input class="ps" type="checkbox" value="GameBoy Advance" oninput="filterCondtn1(event);">GameBoy Advance
-            <input class="ps" type="checkbox" value="DS" oninput="filterCondtn1(event);">DS
-            <input class="ps" type="checkbox" value="3DS" oninput="filterCondtn1(event);">3DS
-          </div>
-          <!-- <div class="InputOpts">
-            <p>Genres</p>
-            <input class="ps" type="checkbox" value="Horror" oninput="filterCondtn1(event);">Horror
-            <input class="ps" type="checkbox" value="Shooter" oninput="filterCondtn1(event);">Shooter
-            <input class="ps" type="checkbox" value="Survival" oninput="filterCondtn1(event);">Survival
-            <input class="ps" type="checkbox" value="Stealth" oninput="filterCondtn1(event);">Stealth
-            <input class="ps" type="checkbox" value="Family" oninput="filterCondtn1(event);">Family
-            <input class="ps" type="checkbox" value="Choice-based" oninput="filterCondtn1(event);">Choice-based
-            <input class="ps" type="checkbox" value="RPG" oninput="filterCondtn1(event);">RPG
-          </div> -->
-        <p>
-            <button class="button" data-modal="modalAddGame">Add a game</button>
-        </p>
-    </nav>
+<body onload="onLoad()">
+    <header>
+        <h1>Nyx's Games</h1>
+    </header>
 
-    <div id="modalAddGame" class="modal">
-        <div class="modal-content">
-            <div class="contact-form">
-                <span class="close">&times;</span>
-                <form action="/">
-                    <h2>Add a game</h2>
-                    <div>
-                        <input class="fname" type="text" name="modal-name" placeholder="Game Name" />
-                        <label for="modal-image">Upload an image for the game:</label>
+    <section id="currentFilters">
+        <!-- <div id="activeFilters">
+            <button class="activefilter">oui x</button>
+        </div> -->
+        <p id="numberItems">5 games</p>
+        <button id="filterMenu" onclick="toggleFilterBar()"><svg version="1.1" id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 36 24" style="enable-background:new 0 0 36 24;" xml:space="preserve">
+                <path d="M14,24v-3h8v3H14z M6,13.5v-3h24v3H6z M0,3V0h36v3H0z" />
+            </svg>Filters</button>
+    </section>
 
-                        <input type="file" id="modal-image" name="modal-image" accept="image/png, image/jpeg">
-                        <label for="modal-console">Which Console:</label>
-                        <select id="modal-console" name="modal-console">
-                            <optgroup label="Playstation">
-                                <option value="PS1">PS1</option>
-                                <option value="PS2">PS2</option>
-                                <option value="PS3">PS3</option>
-                                <option value="PS4">PS4</option>
-                                <option value="PS5">PS5</option>
-                                <option value="PSV">PS Vita</option>
-                            </optgroup>
-                        </select>
-                        <label for="modal-rating">PEGI Rating:</label>
-                        <select id="modal-rating" name="modal-rating">
-                            <option value="3">3</option>
-                            <option value="7">7</option>
-                            <option value="12">12</option>
-                            <option value="16">16</option>
-                            <option value="16">18</option>
-                        </select>
-                        <label for="modal-recommend">Does Nyx Recommend?</label><input type="checkbox"
-                            name="modal-recommend" id="modal-recommend" />
-                    </div>
-
-                    <input type="button" class="modal-submit" onclick="submitAddGame()" value="Submit">Submit</input>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <section id="games">
-
-        
-        <div class="game ps1">PS1 Resident Evil 2<img class="game-image"
+    <section id="maincontent">
+        <section id="games">
+            <div class="game ps1">PS1 Resident Evil 2<img class="game-image"
                 src="media/img/gamecovers/playstation/ps1/resident-evil-2.jpg" alt="Playstation 1 Resident Evil 2">
             <span class="gameinfo psgameinfo">
                 <p class="info-console">PlayStation</p>
@@ -114,7 +49,7 @@
                 <p class="categoriesGenre">Stealth</p>
         </div>
         
-        <div class="game ps2">PS2 Shadow of the Colossus<img class="game-image"
+        <div class="game ps2 ">PS2 Shadow of the Colossus<img class="game-image"
                 src="media/img/gamecovers/playstation/ps2/shadow-of-the-colossus.jpg"
                 alt="Playstation 2 Shadow of the Colossus">
             <span class="gameinfo psgameinfo">
@@ -128,7 +63,7 @@
             <p class="categoriesGenre">Family</p>
         </div>
         
-        <div class="game ps3">PS3 Last of Us, The<img class="game-image"
+        <div class="game ps3 ">PS3 Last of Us, The<img class="game-image"
                 src="media/img/gamecovers/playstation/ps3/the-last-of-us.jpg" alt="Playstation 3 The Last of Us">
 
                 <p class="categoriesConsole">PSAll</p>
@@ -138,7 +73,7 @@
                 <p class="categoriesGenre">Survival</p>
         </div>
         
-        <div class="game ps4">PS4 Last of Us Part II, The<img class="game-image"
+        <div class="game ps4 ">PS4 Last of Us Part II, The<img class="game-image"
                 src="media/img/gamecovers/playstation/ps4/the-last-of-us-part-ii.jpg"
                 alt="Playstation 4 The Last of Us Part II">
             <span class="gameinfo psgameinfo">
@@ -154,14 +89,14 @@
                 <p class="categoriesGenre">Stealth</p>
                 <p class="categoriesGenre">Survival</p>
         </div>
-        <div class="game ps4">PS4 Life is Strange 1<img class="game-image"
+        <div class="game ps4 ">PS4 Life is Strange 1<img class="game-image"
                 src="media/img/gamecovers/playstation/ps4/life-is-strange.jpeg" alt="Playstation 4 Life is Strange">
 
                 <p class="categoriesConsole">PSAll</p>
                 <p class="categoriesConsole">PS4</p>
                 <p class="categoriesGenre">Choice-based</p>
         </div>
-        <div class="game ps4">PS4 Gris<img class="game-image" src="media/img/gamecovers/playstation/ps4/gris.jpeg"
+        <div class="game ps4 ">PS4 Gris<img class="game-image" src="media/img/gamecovers/playstation/ps4/gris.jpeg"
                 alt="Playstation 4 Gris">
             <span class="gameinfo psgameinfo">
                 <p class="info-console">PS4</p>
@@ -174,13 +109,13 @@
             <p class="categoriesConsole">PS4</p>
             <p class="categoriesGenre">Family</p>
         </div>
-        <div class="game ps4">PS4 Witcher 3, The<img class="game-image"
+        <div class="game ps4 ">PS4 Witcher 3, The<img class="game-image"
                 src="media/img/gamecovers/playstation/ps4/the-witcher-3.webp" alt="Playstation 4 The Witcher 3">
             <p class="categoriesConsole">PSAll</p>
             <p class="categoriesConsole">PS4</p>
             <p class="categoriesGenre">RPG</p>
         </div>
-        <div class="game ps4">PS4 Resident Evil 2<img class="game-image"
+        <div class="game ps4 ">PS4 Resident Evil 2<img class="game-image"
                 src="media/img/gamecovers/playstation/ps4/resident-evil-2.webp" alt="Playstation 4 Resident Evil 2">
 
                 <p class="categoriesConsole">PSAll</p>
@@ -189,7 +124,7 @@
             </div>
             
         
-        <div class="game ps5">PS5 Lego Star Wars The Skywalker Saga<img class="game-image"
+        <div class="game ps5 ">PS5 Lego Star Wars The Skywalker Saga<img class="game-image"
                 src="media/img/gamecovers/playstation/ps5/lego-star-wars-the-skywalker-saga.webp"
                 alt="Playstation 2 Lego Star Wars The Skywalker Saga">
 
@@ -198,7 +133,7 @@
                 <p class="categoriesGenre">Family</p>
         </div>
         
-        <div class="game psv">PSV Uncharted Golden Abyss<img class="game-image"
+        <div class="game psv ">PSV Uncharted Golden Abyss<img class="game-image"
                 src="media/img/gamecovers/playstation/psv/uncharted-golden-abyss.jpg"
                 alt="Playstation Vita Uncharted Golden Abyss">
 
@@ -206,14 +141,32 @@
                 <p class="categoriesConsole">PS Vita</p>
                 <p class="categoriesGenre">Shooter</p>
         </div>
+        </section>
 
-        
+        <nav id="filters">
+            <button id="filterConsoleButton" class="filterButton" onclick="expandCategory(event)" name="Consoles"><span>Consoles</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 14.2" style="enable-background:new 0 0 24 14.2;" xml:space="preserve"><path d="M12,14.2L0,2.2L2.2,0L12,9.9l9.8-9.9L24,2.2L12,14.2z" /></svg></button>
+            <div id="Consoles" class="filtertypelist">
+                <label for="PS1" class="filtercheckbox"><span>PS1</span><input type="checkbox" value="PS1" name="PS1" id="PS1" oninput="filterCondtn1(event);"></label>
+                <label for="PS2" class="filtercheckbox"><span>PS2</span><input type="checkbox" value="PS2" name="P21" id="PS2" oninput="filterCondtn1(event);"></label>
+                <label for="PS3" class="filtercheckbox"><span>PS3</span><input type="checkbox" value="PS3" name="PS3" id="PS3" oninput="filterCondtn1(event);"></label>
+                <label for="PS4" class="filtercheckbox"><span>PS4</span><input type="checkbox" value="PS4" name="PS4" id="PS4" oninput="filterCondtn1(event);"></label>
+                <label for="PS5" class="filtercheckbox"><span>PS5</span><input type="checkbox" value="PS5" name="PS5" id="PS5" oninput="filterCondtn1(event);"></label>
+                <label for="PSV" class="filtercheckbox"><span>PS Vita</span><input type="checkbox" value="PS Vita" name="PSV" id="PSV" oninput="filterCondtn1(event);"></label>
+            </div>
+            <button id="filterGenderButton" class="filterButton" onclick="expandCategory(event)" name="Genders"><span>Genders</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 14.2" style="enable-background:new 0 0 24 14.2;" xml:space="preserve"><path d="M12,14.2L0,2.2L2.2,0L12,9.9l9.8-9.9L24,2.2L12,14.2z" /></svg></button>
+            <div id="Genders" class="filtertypelist">
+                <label for="gender1" class="filtercheckbox"><span>Gender1</span><input type="checkbox" name="gender1" id="gender1"></label>
+                <label for="gender2" class="filtercheckbox"><span>Gender2</span><input type="checkbox" name="gender2" id="gender2"></label>
+                <label for="gender3" class="filtercheckbox"><span>Gender3</span><input type="checkbox" name="gender3" id="gender3"></label>
+            </div>
+        </nav>
     </section>
 
-    
-
-    <script src="script/script.js"></script>
+    <script src="script/v2-navbar-display.js"></script>
+    <script src="script/numberofgames.js"></script>
     <script src="script/dynamicfilters.js"></script>
+    <script src="script/alphabeticalsorting.js"></script>
+    <script src="script/init.js"></script>
 </body>
 
 </html>

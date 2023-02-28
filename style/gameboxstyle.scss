@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Playstation1';
+    src: url(../media/fonts/noncommercial/zrnic\ rg.otf);
+}
+
+@font-face {
+    font-family: 'Playstation2';
+    src: url(../media/fonts/noncommercial/btseps2.TTF);
+}
+
+@font-face {
+    font-family: 'Playstation345V';
+    src: url(../media/fonts/noncommercial/PsBold-2Oy2w.ttf);
+}
+
+#games {
+    .showgame {
+        display: block !important;
+    }
+    .game {
+        display: none;
+        z-index: 10;
+        width: var(--gamesize);
+        height: var(--gamesize);
+        position: relative;
+        transition: transform .2s;
+        .game-image{
+            position: absolute;
+            top: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .gameinfo {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+                "console idk2 pegi" 
+                "name name name"
+                "isborrowed idk3 like";
+                align-items: baseline;
+            opacity: 0;
+            transition: 0.2s;
+            p {
+                color: white;
+                margin: 1rem;
+            }
+            .info-console {
+                grid-area: console;
+            }
+            .info-name{
+                grid-area: name;
+                text-align: left;
+                font-weight: 600;
+                font-size: 1.2rem;
+                
+            }
+            .info-is-borrowed {
+                grid-area: isborrowed;
+                align-self: end;
+                font-style: italic;
+            }
+
+            .info-is-liked {
+                grid-area: like;
+                align-self: end;
+                justify-self: end;
+                height: 2rem;
+                width: 2rem;
+                margin: 0.5rem;
+            }
+
+            .info-pegi {
+                width: 2rem;
+            }
+        }
+        .psgameinfo {
+            background-color: rgba(0, 0, 139, 0.7);
+        }
+        .nintendogameinfo {
+            background-color: rgba(139, 0, 0, 0.7);
+        }
+    }
+    .game:hover {
+        z-index: 20;
+        transform: scale(1.05);
+        .gameinfo {
+            opacity: 100%;
+            transition: 0.2s;
+        }
+    }
+    .ps1 .info-console {
+        font-family: 'Playstation1', monospace;
+        font-size: 1.2rem;
+    }
+    .ps2 .info-console {
+        font-family: 'Playstation2', monospace;
+        font-size: 1.5rem;
+    }
+    .ps3 .info-console, .ps4 .info-console, .ps5 .info-console, .psv .info-console {
+        font-family: 'Playstation345V', monospace;
+    }
+}
