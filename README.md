@@ -11,7 +11,7 @@ Trying to have a website where i list all the physical games i own and be able t
 #### sorting behavior
 - when nothing is selected, show everything
 - when selecting consoles and genres, show:
-    - games of any console AND of any genre
+    - games of any selected console AND of any selected genre
         -  example if you select PS2 and PS4 and RPG and FPS:
             - show all PS2 and PS4 games that are either RPG or FPS
     - ability for games to have multiple genres
@@ -19,7 +19,7 @@ Trying to have a website where i list all the physical games i own and be able t
 Optional:
 - sort by PEGI rating
 - sort by availability
-- sort by recommended by nyx
+- sort by recommended (by me)
 
 ### CSS
 
