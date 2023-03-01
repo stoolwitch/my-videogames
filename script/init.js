@@ -1,3 +1,4 @@
 function onLoad() {
     numberOfGames();
+    includeHTML();
 }
