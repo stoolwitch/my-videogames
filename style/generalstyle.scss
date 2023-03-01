@@ -2,6 +2,7 @@
     --passivebuttonbgcolor: white;
     --passivebuttonbgcolorhover: rgb(231, 231, 231);
     --highlightcolor: rgb(255, 98, 0);
+    --highlightcolorhover: rgb(255, 244, 237);
     --gamesize: 250px;
 }
 
@@ -42,7 +43,7 @@ header {
         }
     }
     #filterMenu:hover {
-        background-color: var(--passivebuttonbgcolorhover);
+        background-color: var(--highlightcolorhover);
     }
     .filterMenuActive {
         background-color: var(--highlightcolor) !important;
@@ -136,6 +137,9 @@ header {
             padding: 0.7rem;
             border-radius: 5px;
             margin-bottom: 0.5rem;
+            span {
+                margin-left: 1rem;
+            }
             input[type="checkbox"] {
                 /* Add if not using autoprefixer */
                 -webkit-appearance: none;
