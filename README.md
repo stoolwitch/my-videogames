@@ -6,9 +6,20 @@ Trying to have a website where i list all the physical games i own and be able t
 
 ### Javascript
 
-- when unchecking a specific console, uncheck the console group
-    - optimize that so the same code applies to all checkbox groups
-- every checkbox checked goes into an array in two categories (consoles and genres) and with a button validate and show only checked
+- multi-level sorting system
+
+# sorting behavior
+- when nothing is selected, show everything
+- when selecting consoles and genres, show:
+    - games of any console AND of any genre
+        -  example if you select PS2 and PS4 and RPG and FPS:
+            - show all PS2 and PS4 games that are either RPG or FPS
+    - ability for games to have multiple genres
+
+Optional:
+- sort by PEGI rating
+- sort by availability
+- sort by recommended by nyx
 
 ### CSS
 
