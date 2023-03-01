@@ -128,6 +128,7 @@ PS Vita
 
 Need for Speed: Most Wanted
 Persona 4: Golden
+Playstation All-Stars Battle Royale
 Silent Hill: Book of Memories
 Uncharted: Golden Abyss
 
@@ -184,6 +185,7 @@ Mario Kart 8 Deluxe
 Monster Hunter XX
 Moonlighter
 Pokemon Let's Go Evoli
+Super Mario Odyssey (perdu?)
 Super Smash Bros Ultimate
 
 GameBoy
@@ -230,7 +232,7 @@ Pokemon: Version Platine
 Animal Crossing: New Leaf
 Donkey Kong: Country Returns
 Fantasy Life
-The Legend of Zelda: Ocarina of Time 3D ???
+The Legend of Zelda: Ocarina of Time 3D (perdu??)
 The Legend of Zelda: Majora's Mask 3D
 The Legend of Zelda: A Link Between Worlds
 The Legend of Zelda: TriForce Heroes
@@ -252,3 +254,7 @@ Ecco; The Tides of Time
 Flashback
 Sonic The Hedgehog 2
 Sonic 3
+
+XBOX One
+
+The Lego Movie: The Videogame
