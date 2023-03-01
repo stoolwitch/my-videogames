@@ -8,7 +8,7 @@ Trying to have a website where i list all the physical games i own and be able t
 
 - multi-level sorting system
 
-# sorting behavior
+#### sorting behavior
 - when nothing is selected, show everything
 - when selecting consoles and genres, show:
     - games of any console AND of any genre
