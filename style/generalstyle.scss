@@ -2,29 +2,86 @@
     --passivebuttonbgcolor: white;
     --passivebuttonbgcolorhover: rgb(231, 231, 231);
     --highlightcolor: rgb(255, 98, 0);
-    --highlightcolorhover: rgb(255, 244, 237);
+    --midcolor: #FFBC92;
+    --lowcolor: rgb(255, 244, 237);
     --gamesize: 250px;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family:sans-serif;
 }
 
 body {
     width: 100vw;
+    font-family: 'Poppins', sans-serif;
 }
 header {
-    background-color: aliceblue;
-    padding: 1rem 2rem;
+    background-color: var(--midcolor);
+    padding: 2rem;
+    height: 7rem;
+position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  h1 {
+    z-index: 21;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: center;
+    align-self: center;
+    font-size: 3rem;
+    color: var(--highlightcolor);
+    font-weight: 700;
+  }
+  div {
+    z-index: 21;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    justify-self: end;
+  }
 }
 
+header::after {
+    z-index: 20;
+    border-radius: 100%;
+  position: absolute;
+  background: var(--lowcolor);
+  right: -200px;
+  left: -200px;
+  top: -100px;
+  content: '';
+  bottom: 0;
+}
+
+.button {
+    all: unset;
+        cursor: pointer;
+        padding: 0.7rem 1rem;
+        color: var(--highlightcolor);
+        background-color: white;
+        border: 1px solid var(--highlightcolor);
+        border-radius: 3000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            height: 1rem;
+            margin-right: 0.7rem;
+            fill: var(--highlightcolor);
+        }
+}
+
+.button:hover {
+        background-color: var(--lowcolor);
+    }
+
 #currentFilters {
-    background-color: rgb(252, 240, 255);
+    z-index: 10;
+    background-color: var(--midcolor);
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 0 2rem 1rem 2rem;
     #filterMenu {
         all: unset;
         cursor: pointer;
@@ -43,7 +100,7 @@ header {
         }
     }
     #filterMenu:hover {
-        background-color: var(--highlightcolorhover);
+        background-color: var(--lowcolor);
     }
     .filterMenuActive {
         background-color: var(--highlightcolor) !important;
@@ -73,7 +130,8 @@ header {
     //         background-color: rgb(135, 135, 135);
     //     }
     // }
-}
+    }
+
 
 #maincontent {
     display: grid;
@@ -83,7 +141,6 @@ header {
 #games {
     grid-column-start: 1;
     grid-column-end: 3;
-    background-color: aliceblue;
     height: auto;
     padding-top: 2rem;
     display: grid;
@@ -95,7 +152,7 @@ header {
 #filters {
     grid-column-start: 2;
     grid-column-end: 3;
-    background-color: rgb(240, 255, 244);
+    background-color: var(--lowcolor);
     display: none;
     padding: 2rem;
     height: auto;
