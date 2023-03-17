@@ -1,3 +1,7 @@
+:root {
+    --gamesize: 250px;
+}
+
 @font-face {
     font-family: 'Playstation1';
     src: url(../media/fonts/noncommercial/zrnic\ rg.otf);
@@ -14,14 +18,17 @@
 }
 
 #games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 50vw);
+    justify-content: center;
     .showgame {
         display: block !important;
     }
     .game {
         display: none;
         z-index: 10;
-        width: var(--gamesize);
-        height: var(--gamesize);
+        width: 50vw;
+        height: 50vw;
         position: relative;
         transition: transform .2s;
         .game-image{
@@ -91,14 +98,7 @@
             background-color: rgba(139, 0, 0, 0.7);
         }
     }
-    .game:hover {
-        z-index: 20;
-        transform: scale(1.05);
-        .gameinfo {
-            opacity: 100%;
-            transition: 0.2s;
-        }
-    }
+    
     .ps1 .info-console {
         font-family: 'Playstation1', monospace;
         font-size: 1.2rem;
@@ -109,5 +109,23 @@
     }
     .ps3 .info-console, .ps4 .info-console, .ps5 .info-console, .psv .info-console {
         font-family: 'Playstation345V', monospace;
+    }
+}
+
+@media (min-width: 600px) {
+    #games {
+        grid-template-columns: repeat(auto-fit, var(--gamesize));
+        .game {
+            width: var(--gamesize);
+            height: var(--gamesize);
+        }
+        .game:hover {
+            z-index: 20;
+            transform: scale(1.05);
+            .gameinfo {
+                opacity: 100%;
+                transition: 0.2s;
+            }
+        }
     }
 }
