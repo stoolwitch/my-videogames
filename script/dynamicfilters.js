@@ -11,4 +11,5 @@ function filterCondtn1(event) {
     }
   }
   numberOfGames();
+  alphabeticalsorting();
 }
