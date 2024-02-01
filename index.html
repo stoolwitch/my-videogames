@@ -31,11 +31,19 @@
             <button class="activefilter">oui x</button>
         </div> -->
         <p id="numberItems">X games</p>
-        <button id="filterMenu" class="button" onclick="toggleFilterBar()"><svg version="1.1" id="Layer_1"
+        <div id="filtersort">
+                <select name="sort" class="custom-select" id="sortMenu">
+                        <option value="title">Title</option>
+                        <option value="releasedate">Release Date</option>
+                        <option value="console">Console</option>
+                        <option value="random">Random</option>
+                </select>
+                <button id="filterMenu" class="button" onclick="toggleFilterBar()"><svg version="1.1" id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 36 24" style="enable-background:new 0 0 36 24;" xml:space="preserve">
                 <path d="M14,24v-3h8v3H14z M6,13.5v-3h24v3H6z M0,3V0h36v3H0z" />
-            </svg>Filters</button>
+                </svg>Filters</button>
+        </div>
     </section>
 
     <main id="maincontent">

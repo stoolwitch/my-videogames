@@ -109,10 +109,16 @@ header::after {
     align-items: baseline;
     padding: 1rem;
 
+    #filtersort {
+        display: inline-flex;
+        align-items: center;
+    }
+
     #filterMenu {
         all: unset;
         cursor: pointer;
         padding: 0.7rem 1rem;
+        margin-left: 1rem;
         color: var(--highlightcolor);
         background-color: white;
         border: 1px solid var(--highlightcolor);
@@ -144,6 +150,7 @@ header::after {
     .filterMenuActive:hover {
         background-color: rgb(40, 40, 40);
     }
+
 }
 
 @media (min-width: 600px) {
